@@ -1,12 +1,12 @@
 import React from 'react'
-import classes from './foodCatalog.module.css'
+import classes from './foodDetails.module.css'
 
-function FoodCatalog() {
+function FoodDetails() {
   return (
-    <div FoodCatalog="App">
+    <div FoodDetails="App">
       
     </div>
   );
 }
 
-export default FoodCatalog;
+export default FoodDetails;
