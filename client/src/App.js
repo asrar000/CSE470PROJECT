@@ -15,7 +15,7 @@ function App() {
   return (
     <div >
       <Navbar />
-      <Routes>
+    <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/login' element={<Login />} />
       <Route path='/signup' element={<Signup />} />
@@ -25,11 +25,13 @@ function App() {
       <Route path='/cart' element={<Cart />} />
       <Route path='/checkout' element={<Checkout />} />
        
-      </Routes>
-      <Footer />
+    </Routes>
+    <Footer />
       
     </div>
   );
 }
 
 export default App;
+
+
