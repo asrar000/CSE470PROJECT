@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './newsletter.module.css'
+//import classes from './newsletter.module.css'
 
 function Newsletter() {
   return (

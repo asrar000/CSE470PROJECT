@@ -14,7 +14,7 @@ import Checkout from './components/checkout/Checkout';
 function App() {
   return (
     <div >
-      <Navbar />
+    <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/login' element={<Login />} />

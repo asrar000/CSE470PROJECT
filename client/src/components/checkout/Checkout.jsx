@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './checkout.module.css'
+//import classes from './checkout.module.css'
 
 function Checkout() {
   return (

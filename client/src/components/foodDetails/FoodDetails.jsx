@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './foodDetails.module.css'
+//import classes from './foodDetails.module.css'
 
 function FoodDetails() {
   return (
