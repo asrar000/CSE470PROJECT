@@ -1,10 +1,15 @@
 import React from 'react'
+import Hero from '../hero/Hero'
 import classes from './home.module.css'
 
-function Home() {
+const Home= () => {
   return (
-    <div>Home</div>
-  );
+    <div className={classes.container}>
+      <div className={classes.wrapper}>
+      <Hero />
+      </div>
+    </div>
+  )
 }
 
 export default Home;
