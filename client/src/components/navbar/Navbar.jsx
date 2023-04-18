@@ -13,28 +13,27 @@ function Navbar() {
         </div>
         <div className={classes.center}>
           <ul className={classes.list}>
-          <li classname={classes.listItem}>
+          <li className={classes.listItem}>
               <a href="#">Home </a> 
             </li>
-            <li classname={classes.listItem}>
+            <li className={classes.listItem}>
               <a href="#contacts">Contacts </a> 
             </li>
-            <li classname={classes.listItem}>
+            <li className={classes.listItem}>
               <a href="#foods">Foods </a> 
             </li>
-            <li classname={classes.listItem}>
-              <a href="#faq">FAQ </a> 
+            <li className={classes.listItem}>
+              <a href="#faq">FAQ</a> 
             </li>
-            <li classname={classes.listItem}>
+            <li className={classes.listItem}>
               <Link to='/create'>Create</Link>
             </li>
-          
           </ul>
         </div>
         <div className={classes.right}>
           <AiOutlineUser className={classes.userIcon}/>
           <Link to='/cart' className={classes.cartContainer}>
-            <AiOutlineShoppingCart classname={classes.carticon}/>
+            <AiOutlineShoppingCart className={classes.carticon}/>
             <div className={classes.cartQuantity}>0</div>
 
           </Link>
@@ -42,7 +41,7 @@ function Navbar() {
         </div>
        </div>
     </div>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

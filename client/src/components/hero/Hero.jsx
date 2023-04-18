@@ -17,9 +17,9 @@ const Hero = () => {
           Our resturant always puts the client above.
           They are our single most important thing for our business.
         </p>
-        <div className={classes.button}>
+        <div className={classes.buttons}>
           <button className={classes.buttonOrder}>Order now!</button>
-          <button className={classes.buttonsee}> <a href="#foods"> see what's available <AiOutlineArrowDown/> </a></button>
+          <button className={classes.buttonSee}> <a href="#foods"> See what's available <AiOutlineArrowDown/> </a></button>
         </div>
       </div>
      <div className={classes.right}>
@@ -33,4 +33,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
