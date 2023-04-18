@@ -3,9 +3,7 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div Navbar="App">
-      
-    </div>
+    <div>Navbar</div>
   );
 }
 

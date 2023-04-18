@@ -3,9 +3,7 @@ import React from 'react'
 
 function Create() {
   return (
-    <div Create="App">
-      
-    </div>
+    <div>Create</div>
   );
 }
 

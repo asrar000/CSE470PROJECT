@@ -3,9 +3,7 @@ import React from 'react'
 
 function Checkout() {
   return (
-    <div Checkout="App">
-      
-    </div>
+    <div>Checkout</div>
   );
 }
 

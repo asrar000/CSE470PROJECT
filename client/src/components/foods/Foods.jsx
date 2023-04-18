@@ -3,9 +3,7 @@ import React from 'react'
 
 function Foods() {
   return (
-    <div Foods="App">
-      
-    </div>
+    <div>Foods</div>
   );
 }
 

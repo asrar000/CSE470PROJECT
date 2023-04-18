@@ -3,9 +3,7 @@ import React from 'react'
 
 function Newsletter() {
   return (
-    <div Newsletter="App">
-      
-    </div>
+    <div>Newsletter</div>
   );
 }
 
