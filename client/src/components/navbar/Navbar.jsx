@@ -2,9 +2,25 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import classes from './navbar.module.css'
 import {AiOutlineUser,AiOutlineShoppingCart} from 'react-icons/ai'
+import { useState } from 'react'
+//import { useDispatch, useSelector } from 'react-redux'
+//import { logout } from '../../redux/authSlice'
 function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+
+
+
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset === 0 ? false : true)
+    return () => (window.onscroll = null)
+  }
+
+
+
+
   return (
-    <div className={classes.container}>
+    <div className={`${classes.container} ${isScrolled && classes.scrolled}`}>
        <div className={classes.wrapper}>
         <div className={classes.left}>
         <Link to='/' className={classes.title}>
