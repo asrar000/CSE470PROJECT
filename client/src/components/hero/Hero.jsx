@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './hero.module.css'
 import {AiOutlineArrowDown} from 'react-icons/ai'
 import manEating from '../../assets/man-having-his-meal.svg'
+
 const Hero = () => {
   return (
     <section style={{height: '200vh'}} id="home" className={classes.container}>
@@ -29,4 +30,5 @@ const Hero = () => {
     </section>
   )
 }
+
 export default Hero

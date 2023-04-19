@@ -104,13 +104,12 @@
     border-radius: 50%;
     font-size: 15px;
 }
+
 .logout{
-    outline:none;
-    border:none;
+    outline: none;
+    border: none;
     background-color: transparent;
-    font-size:18px;
+    font-size: 18px;
     margin-left: 1rem;
     cursor: pointer;
-    
-
 }

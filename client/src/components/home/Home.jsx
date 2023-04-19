@@ -14,10 +14,9 @@ const Home = () => {
         <Hero />
         <div className={classes.delivery}>
           <div className={classes.titles}>
-            
+            <span className={classes.deliverySubtitle}>Delivery</span>
+            <h2 className={classes.deliveryTitle}>Always on time for you</h2>
           </div>
-          <Foods />
-          <Newsletter />
           <div className={classes.deliveryInfos}>
             <div className={classes.deliveryInfo}>
               <img src={illustration1} alt="" className={classes.firstImg}/>
@@ -33,7 +32,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
+        <Foods />
+        <Newsletter />
       </div>
     </div>
   )
