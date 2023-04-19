@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className={classes.wrapper}>
         <div className={classes.left}>
           <Link to='/' className={classes.title}>
-            WebDevMania
+            CSE470 PROJECT
           </Link>
         </div>
         <div className={classes.center}>
