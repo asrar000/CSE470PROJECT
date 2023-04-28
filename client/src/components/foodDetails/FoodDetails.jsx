@@ -13,8 +13,6 @@ const FoodDetails = () => {
   const dispatch = useDispatch()
   const {id} = useParams()
   const {token} = useSelector((state) => state.auth)
-  const {products} = useSelector((state) => state.cart)
-  console.log(products)
 
   useEffect(() => {
      const fetchFoodDetails = async() => {

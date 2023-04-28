@@ -26,7 +26,7 @@ const Login = () => {
         })
 
         const data = await res.json()
-        console.log(data)
+        console.log('here',data)
         dispatch(login(data)) // {userInfo, token}
         navigate("/")
         

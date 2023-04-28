@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux'
 import classes from './foodCatalog.module.css'
 import { useEffect } from 'react'
 
+
 const FoodCatalog = () => {
   const [filteredFoods, setFilteredFoods] = useState([])
   const location = useLocation()

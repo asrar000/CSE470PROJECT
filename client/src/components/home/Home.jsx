@@ -6,6 +6,7 @@ import illustration2 from '../../assets/delivery-location.svg'
 import illustration3 from '../../assets/deliveryman-with-pizza.svg'
 import Foods from '../foods/Foods'
 import Newsletter from '../newsletter/Newsletter'
+import Restaurant from '../restaurant/Restaurant'
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <Restaurant/>
         <Foods />
         <Newsletter />
       </div>

@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import classes from './navbar.module.css'
-import {AiOutlineUser, AiOutlineShoppingCart} from 'react-icons/ai'
+import { AiOutlineUser, AiOutlineShoppingCart } from 'react-icons/ai'
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { logout } from '../../redux/authSlice'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const {products} = useSelector((state) => state.cart)
+  const { products } = useSelector((state) => state.cart)
+  const isAdmin = useSelector(state => state.auth?.user?.isAdmin || false)
+
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
@@ -32,8 +34,8 @@ const Navbar = () => {
         </div>
         <div className={classes.center}>
           <ul className={classes.list}>
-          <li className={classes.listItem}>
-              <a href="#">Home</a>
+            <li className={classes.listItem}>
+              <a href="/">Home</a>
             </li>
             <li className={classes.listItem}>
               <a href="#contacts">Contacts</a>
@@ -42,15 +44,22 @@ const Navbar = () => {
               <a href="#foods">Foods</a>
             </li>
             <li className={classes.listItem}>
-              <a href="#RESTURANT">RESTURANT</a>
+              <a href="#restaurants">RESTAURANTS</a>
             </li>
-            <li className={classes.listItem}>
-              <Link to='/create'>Create</Link>
-            </li>
+            {isAdmin && (
+              <>
+                <li className={classes.listItem}>
+                  <Link to='/create'>Add Food</Link>
+                </li>
+                <li className={classes.listItem}>
+                  <Link to='/create_restaurant'>Add Restaurant</Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
         <div className={classes.right}>
-          <AiOutlineUser className={classes.userIcon}/>
+          <AiOutlineUser className={classes.userIcon} />
           <Link to='/cart' className={classes.cartContainer}>
             <AiOutlineShoppingCart className={classes.cartIcon} />
             <div className={classes.cartQuantity}>{products.length}</div>
